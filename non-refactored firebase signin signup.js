@@ -34,7 +34,6 @@ var publicPages = [
 auth.onAuthStateChanged(user => {
     var currentPath = window.location.pathname;
     if (user) {
-        //User is signed in.
         localStorage.setItem("user", JSON.stringify(user));
         if (publicPages.includes(currentPath)) {
             window.location.replace('/');

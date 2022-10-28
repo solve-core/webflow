@@ -39,7 +39,6 @@ auth.onAuthStateChanged(user => {
             window.location.replace('/');
         } else {
             //console.log('logged in Email:' + user.email);
-            // console.log('UID:' + user.uid);  
             navSignupbtn.style.display = 'none';
             loginLink.style.display = 'none';
             var herobtn = document.querySelector('.get_started_text');
